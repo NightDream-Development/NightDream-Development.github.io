@@ -52,6 +52,7 @@
 			height: 100%;
 			background-color: inherit;
 			transform-style: preserve-3d; /* enable 3D transforms */
+			border-radius: 10px;
 			backface-visibility: hidden; /* hide the back face of the sides */
 			transition: all 0.3s ease-out;
 		}
