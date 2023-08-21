@@ -4,9 +4,9 @@
 			/*background: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 42, 255), rgb(174, 0, 255));
 			animation: slide 5s infinite;*/
 			background-image: url('images/bg.png');
-			background-size:     cover;                      /* <------ */
+			background-size:     cover;
 			background-repeat:   no-repeat;
-			background-position: center center;              /* optional, center the image */
+			background-position: center center;
 			color: #ffffff;
 			font-family: Arial, sans-serif;
 			font-size: 18px;
@@ -38,7 +38,7 @@
 			transition: background-color 0.5s ease;
 			cursor: pointer;
  	 		transition: all 0.3s ease-out;
-  			perspective: 1000px; /* set the perspective for 3D transforms */
+  			perspective: 1000px;
 		}
 
 
@@ -51,30 +51,30 @@
 			width: 100%;
 			height: 100%;
 			background-color: inherit;
-			transform-style: preserve-3d; /* enable 3D transforms */
+			transform-style: preserve-3d;
 			border-radius: 10px;
-			backface-visibility: hidden; /* hide the back face of the sides */
+			backface-visibility: hidden;
 			transition: all 0.3s ease-out;
 		}
 
 		.btn::before {
-  			transform: rotateY(-90deg) translateZ(25px); /* left side */
+  			transform: rotateY(-90deg) translateZ(25px);
  			 box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 		}
 		.btn::after {
- 			transform: rotateY(90deg) translateZ(25px); /* right side */
+ 			transform: rotateY(90deg) translateZ(25px);
   			box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
 		}
 
 		.btn:hover {
 			background-color: #9000ff;
-			transform: rotateX(30deg) rotateY(-20deg); /* rotate the button on hover */
+			transform: rotateX(30deg) rotateY(-20deg);
 		}
 		.btn:hover::after {
-  			transform: rotateY(0deg) translateZ(25px); /* show the right side on hover */
+  			transform: rotateY(0deg) translateZ(25px);
 		}
 		.btn:hover::before {
- 			 transform: rotateY(0deg) translateZ(25px); /* show the left side on hover */
+ 			 transform: rotateY(0deg) translateZ(25px);
 		}
 
 		.changelog {
@@ -141,12 +141,10 @@
     		right: 20px;
         }
 
-/* width */
 ::-webkit-scrollbar {
   width: 9.5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(106, 0, 255);
   background: rgb(115, 0, 255);
@@ -154,7 +152,6 @@
   margin-block: .5em;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(162, 0, 255);
   border-radius: 100vw;
